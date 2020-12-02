@@ -1,10 +1,10 @@
 <?php
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
 class test_class extends Seeder
 {
-    namespace Database\Seeders;
 
     /**
      * Auto generated seed file
