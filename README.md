@@ -1,5 +1,5 @@
 **Inverse seed generator (iSeed)** is a Laravel package that provides a method to generate a new seed file based on data from the existing database table.
-
+This a fork of Orangehill's Iseed package with additions to make it compatible with Laravel 8
 [![Build Status](https://travis-ci.org/orangehill/iseed.png)](http://travis-ci.org/orangehill/iseed)
 [![Latest Stable Version](https://poser.pugx.org/orangehill/iseed/v/stable.png)](https://packagist.org/packages/orangehill/iseed) [![Total Downloads](https://poser.pugx.org/orangehill/iseed/downloads.png)](https://packagist.org/packages/orangehill/iseed)
 [![Analytics](https://ga-beacon.appspot.com/UA-1936460-35/iseed?useReferrer&flat)](https://github.com/igrigorik/ga-beacon)
@@ -20,11 +20,11 @@ composer require orangehill/iseed:1.1 # Laravel 4
 
 ### 2. Add Service Provider (Laravel 5.4 and below)
 
-Latest Laravel versions have auto dicovery and automatically add service provider - if you're using 5.4.x and below, remember to add it to `providers` array at `/app/config/app.php`:
+Latest Laravel versions have auto discovery and automatically add service provider - if you're using 5.4.x and below, remember to add it to `providers` array at `/app/config/app.php`:
 
 ```php
 // ...
-Orangehill\Iseed\IseedServiceProvider::class,
+Ozwild\Iseed\IseedServiceProvider::class,
 ```
 
 ## Artisan command options

@@ -1,9 +1,13 @@
 {
-    "name": "orangehill/iseed",
-    "description": "Generate a new Laravel database seed file based on data from the existing database table.",
-    "keywords": ["laravel", "generators", "seed", "artisan"],
+    "name": "ozwild/iseed",
+    "description": "Generate Laravel seed files from database state. This is a fork of orangehill/iseed that includes support for Laravel 8",
+    "keywords": ["laravel","laravel 8", "generators", "seed", "artisan"],
     "license": "BSD-2-Clause",
     "authors": [
+        {
+            "name": "Ozwild",
+            "email": "aozikuma@gmail.com"
+        },
         {
             "name": "Tihomir Opacic",
             "email": "tihomir.opacic@orangehilldev.com"
@@ -21,21 +25,21 @@
     },
     "autoload": {
         "psr-0": {
-            "Orangehill\\Iseed": "src/"
+            "Ozwild\\Iseed": "src/"
         },
         "classmap": [
-            "src/Orangehill/Iseed/Exceptions.php"
+            "src/Ozwild/Iseed/Exceptions.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Orangehill\\Iseed\\Tests\\": "tests"
+            "Ozwild\\Iseed\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Orangehill\\Iseed\\IseedServiceProvider"
+                "Ozwild\\Iseed\\IseedServiceProvider"
             ]
         }
     },
